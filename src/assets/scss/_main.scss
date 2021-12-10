@@ -1,0 +1,66 @@
+#map{
+    height:100vh;
+    width: 100%;
+    z-index:999;
+}
+
+.btnGroup{
+    position: absolute;
+    bottom:2%;
+    right:1%;
+    z-index: 1000;
+    &-item{
+        margin:10px 0;
+    }
+}
+
+.localBtn{
+    @include Btn;
+    padding:10px 15px;
+}
+
+.laneBtn{
+    @include Btn;
+    padding:10px 15px;
+
+}
+.bikeStationBtn{
+    @include Btn;
+    padding:10px 15px;
+}
+
+
+.search-select{
+    position: fixed;
+    top:2%;
+    left:50%;
+    z-index: 1000;
+    border:0;
+    font-size: 1.5em;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    option{
+      font-size: .75em;
+      &:hover,&:active{
+          color:white;
+          background-color: $primary;
+      }
+    }
+}
+
+
+
+.closeBtn{
+    position: absolute;
+    top: 0;
+    right:0;
+    border:0;
+    background-color: inherit;
+    color:white;
+    font-size: 1.75em;
+    height: 100%;
+    padding:0 20px;
+    z-index: 1020;
+}
